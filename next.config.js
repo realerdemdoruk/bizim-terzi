@@ -8,6 +8,6 @@ const nextConfig = {
 
 module.exports = {
   images: {
-    domains: ["images.unsplash.com", "i.pinimg.com"],
+    domains: ["images.unsplash.com", "i.pinimg.com", "picsum.photos"],
   },
 };

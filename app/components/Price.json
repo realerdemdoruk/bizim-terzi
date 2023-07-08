@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "name": "Lorem1",
+    "price": "1000 TL",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl eget ultricies aliquam, nunc nisl aliquet nunc, vitae aliq",
+    "image": "https://picsum.photos/250/250"
+  },
+  {
+    "id": 2,
+    "name": "Lorem2",
+    "price": "1000 TL",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl eget ultricies aliquam, nunc nisl aliquet nunc, vitae aliq",
+    "image": "https://picsum.photos/250/250"
+  },
+  {
+    "id": 3,
+    "name": "Lorem3",
+    "price": "1000 TL",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl eget ultricies aliquam, nunc nisl aliquet nunc, vitae aliq",
+    "image": "https://picsum.photos/250/250"
+  },
+  {
+    "id": 4,
+    "name": "Lorem4",
+    "price": "1000 TL",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl eget ultricies aliquam, nunc nisl aliquet nunc, vitae aliq",
+    "image": "https://picsum.photos/250/250"
+  },
+  {
+    "id": 5,
+    "name": "Lorem5",
+    "price": "1000 TL",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl eget ultricies aliquam, nunc nisl aliquet nunc, vitae aliq",
+    "image": "https://picsum.photos/250/250"
+  },
+  {
+    "id": 6,
+    "name": "Lorem6",
+    "price": "1000 TL",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl eget ultricies aliquam, nunc nisl aliquet nunc, vitae aliq",
+    "image": "https://picsum.photos/250/250"
+  },
+  {
+    "id": 7,
+    "name": "Lorem7",
+    "price": "1000 TL",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl eget ultricies aliquam, nunc nisl aliquet nunc, vitae aliq",
+    "image": "https://picsum.photos/250/250"
+  },
+  {
+    "id": 8,
+    "name": "Lorem8",
+    "price": "1000 TL",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl eget ultricies aliquam, nunc nisl aliquet nunc, vitae aliq",
+    "image": "https://picsum.photos/250/250"
+  }
+]
