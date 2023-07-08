@@ -6,6 +6,8 @@ import Image from "next/image";
 import { useRouter, usePathname, useSearchParams } from "next/navigation";
 import Link from "next/link";
 
+import { useState } from "react";
+
 const item = {
   hidden: {
     opacity: 0,
@@ -36,9 +38,10 @@ const Card = () => {
         class="flex flex-wrap justify-center mt-10"
       >
         {pathname === "/" &&
-          Price.slice(0, 5).map((price, index) => {
+          Price.slice(0, 5).map((price) => {
             return (
-              <motion.div variants={item} class="p-4 max-w-sm">
+              // <Link href="/pages/price/[id]" as={`/pages/price/${price.id}`}>
+              <motion.div variants={item} class="p-4 max-w-sm" key={price.id}>
                 <div class="flex  rounded-lg h-full bg-teal-400 p-8 flex-col hover:bg-teal-500 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105">
                   <div className="flex justify-center">
                     <Image
@@ -47,6 +50,7 @@ const Card = () => {
                       width="250"
                       height="250"
                       className="rounded-lg"
+                      onClick={() => router.push(`/pages/price/${price.id}`)}
                     />
                   </div>
 
@@ -81,6 +85,7 @@ const Card = () => {
                   </div>
                 </div>
               </motion.div>
+              // </Link>
             );
           })}{" "}
         {pathname === "/pages/fees" &&
@@ -136,7 +141,7 @@ const Card = () => {
       {/* show here only if on homepage */}
 
       {pathname === "/" && (
-        <div className="flex mt-10 mb-10 justify-center mt-10">
+        <div className="flex   justify-center mt-10">
           <button
             onClick={() => router.push("/pages/fees")}
             className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-500 ease-in-out transform  hover:scale-105"
