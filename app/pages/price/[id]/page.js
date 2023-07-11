@@ -14,7 +14,10 @@ export default function Page({ params }) {
       {Price.map((item) => {
         if (item.id == params.id) {
           return (
-            <div className="flex flex-col-reverse md:flex-row justify-center items-center gap-10">
+            <div
+              key={item.id}
+              className="flex flex-col-reverse md:flex-row justify-center items-center gap-10"
+            >
               <div className="order-2 md:order-1">
                 <Image
                   src={item.image}

@@ -91,7 +91,7 @@ const Card = () => {
         {pathname === "/pages/fees" &&
           Price.map((price, index) => {
             return (
-              <motion.div variants={item} class="p-4 max-w-sm">
+              <motion.div key={index} variants={item} class="p-4 max-w-sm">
                 <div class="flex  rounded-lg h-full bg-teal-400 p-8 flex-col hover:bg-teal-500 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105">
                   <div className="flex justify-center">
                     <Image
