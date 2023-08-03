@@ -50,10 +50,8 @@ const Card = () => {
                       width="250"
                       height="250"
                       className="rounded-lg"
-                      onClick={() => router.push(`/pages/price/${price.id}`)}
                     />
                   </div>
-
                   <h2 class="text-white text-lg font-medium flex mt-3 cursor-pointer justify-center ">
                     {price.name}
                   </h2>
@@ -65,11 +63,12 @@ const Card = () => {
                     <p class="leading-relaxed text-base text-slate-800 cursor-pointer">
                       {price.price}
                     </p>
-                    <a
+                    <span
+                      onClick={() => router.push(`/pages/price/${price.id}`)}
                       href="#"
-                      class="mt-3 text-black hover:text-blue-600 inline-flex items-center"
+                      class="mt-3 text-black hover:text-blue-600 inline-flex items-center cursor-pointer"
                     >
-                      Learn More
+                      Detalı Bilgi
                       <svg
                         fill="none"
                         stroke="currentColor"
@@ -81,10 +80,11 @@ const Card = () => {
                       >
                         <path d="M5 12h14M12 5l7 7-7 7"></path>
                       </svg>
-                    </a>
-                  </div>
+                    </span>
+                  </div>{" "}
                 </div>
               </motion.div>
+
               // </Link>
             );
           })}{" "}
@@ -114,11 +114,12 @@ const Card = () => {
                     <p class="leading-relaxed text-base text-slate-800 cursor-pointer">
                       {price.price}
                     </p>
-                    <a
+                    <span
                       href="#"
-                      class="mt-3 text-black hover:text-blue-600 inline-flex items-center"
+                      class="mt-3 cursor-pointer text-black hover:text-blue-600 inline-flex items-center"
+                      onClick={() => router.push(`/pages/price/${price.id}`)}
                     >
-                      Learn More
+                      Detalı Bilgi
                       <svg
                         fill="none"
                         stroke="currentColor"
@@ -130,7 +131,7 @@ const Card = () => {
                       >
                         <path d="M5 12h14M12 5l7 7-7 7"></path>
                       </svg>
-                    </a>
+                    </span>
                   </div>
                 </div>
               </motion.div>
@@ -138,13 +139,11 @@ const Card = () => {
           })}
       </motion.div>
 
-      {/* show here only if on homepage */}
-
       {pathname === "/" && (
-        <div className="flex   justify-center mt-10">
+        <div className="flex justify-center mt-10">
           <button
             onClick={() => router.push("/pages/fees")}
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-500 ease-in-out transform  hover:scale-105"
+            className="bg-blue-500 mb-5 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-500 ease-in-out transform  hover:scale-105"
           >
             Bütün Fiyatları Göster
           </button>
