@@ -1,13 +1,14 @@
 import Image from "next/image";
-// import Slider from "./components/Slider";
+import Slider from "./components/Slider";
 import Dis from "./components/Dis";
-// import { SliderData } from "./components/SliderData";
+import { SliderData } from "./components/SliderData";
 import Location from "./components/Location";
 import Card from "./components/Card";
 export default function Home() {
   return (
     <div>
-      {/* <Slider slides={SliderData} /> */}
+      {/* <Slider /> */}
+      <Slider slides={SliderData} />
       {/* <Dis /> */}
       <h3 className="text-3xl font-semibold mb-10 text-center text-gray-800 dark:text-gray-100">
         Neredeyiz?
