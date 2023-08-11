@@ -27,9 +27,9 @@ export default function Page({ params }) {
                   className="rounded-lg"
                 />
               </div>
-              <div className="order-1 md:order-2">
-                <p className="mt-3 text-lg font-semibold">{item.name}</p>
-                <p className="mt-3 text-gray-500">{item.description}</p>
+              <div className="order-1 md:order-2 md:p-0 p-16 md:text-left text-center">
+                <p className="mt-3 text-lg font-semibold  ">{item.name}</p>
+                <p className="mt-3 text-gray-500 ">{item.description}</p>
                 <p className="mt-3 text-xl font-bold">{item.price}</p>
               </div>
             </div>

@@ -66,7 +66,8 @@ const Card = () => {
                     <span
                       onClick={() => router.push(`/pages/price/${price.id}`)}
                       href="#"
-                      class="mt-3 text-black hover:text-blue-600 inline-flex items-center cursor-pointer"
+                      class="mt-3  text-black hover:text-blue-600 inline-flex items-center cursor-pointer
+                      transition duration-500 ease-in-out transform  hover:scale-105"
                     >
                       Detalı Bilgi
                       <svg
@@ -75,7 +76,7 @@ const Card = () => {
                         stroke-linecap="round"
                         stroke-linejoin="round"
                         stroke-width="2"
-                        class="w-4 h-4 ml-2"
+                        class="w-4 h-4 ml-2 "
                         viewBox="0 0 24 24"
                       >
                         <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -116,7 +117,8 @@ const Card = () => {
                     </p>
                     <span
                       href="#"
-                      class="mt-3 cursor-pointer text-black hover:text-blue-600 inline-flex items-center"
+                      class="mt-3  text-black hover:text-blue-600 inline-flex items-center cursor-pointer
+                      transition duration-500 ease-in-out transform  hover:scale-105"
                       onClick={() => router.push(`/pages/price/${price.id}`)}
                     >
                       Detalı Bilgi
