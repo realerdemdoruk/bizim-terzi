@@ -4,9 +4,6 @@ import { motion } from "framer-motion";
 import Price from "./Price.json";
 import Image from "next/image";
 import { useRouter, usePathname, useSearchParams } from "next/navigation";
-import Link from "next/link";
-
-import { useState } from "react";
 
 const item = {
   hidden: {
@@ -30,117 +27,206 @@ const Card = () => {
   const pathname = usePathname();
 
   return (
-    <div>
+    <div class="min-h-screen  flex justify-center flex-col items-center py-20">
       <motion.div
         variants={container}
         initial="hidden"
         animate="visible"
-        class="flex flex-wrap justify-center mt-10"
+        // class="md:px-4 md:grid md:grid-cols-2 lg:grid-cols-3 flex justify-center gap-5 space-y-4 md:space-y-0 "
+        class="flex  flex-wrap justify-center gap-5 space-y-4 md:space-y-0 mt-10"
       >
+        {/* Buradan itibaren dön */}
         {pathname === "/" &&
           Price.slice(0, 5).map((price) => {
             return (
-              // <Link href="/pages/price/[id]" as={`/pages/price/${price.id}`}>
-              <motion.div variants={item} class="p-4 max-w-sm" key={price.id}>
-                <div class="flex  rounded-lg h-full bg-teal-400 p-8 flex-col hover:bg-teal-500 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105">
-                  <div className="flex justify-center">
-                    <Image
-                      src={price.image}
-                      alt="/"
-                      width="250"
-                      height="250"
-                      className="rounded-lg"
-                    />
-                  </div>
-                  <h2 class="text-white text-lg font-medium flex mt-3 cursor-pointer justify-center ">
-                    {price.name}
-                  </h2>
-                  {/* </div> */}
-                  <div class="flex flex-col justify-between flex-grow">
-                    <p class="leading-relaxed text-base text-white cursor-pointer">
-                      {price.description}
-                    </p>
-                    <p class="leading-relaxed text-base text-slate-800 cursor-pointer">
-                      {price.price}
-                    </p>
-                    <span
-                      onClick={() => router.push(`/pages/price/${price.id}`)}
-                      href="#"
-                      class="mt-3  text-black hover:text-blue-600 inline-flex items-center cursor-pointer
-                      transition duration-500 ease-in-out transform  hover:scale-105"
-                    >
-                      Detalı Bilgi
-                      <svg
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        class="w-4 h-4 ml-2 "
-                        viewBox="0 0 24 24"
-                      >
-                        <path d="M5 12h14M12 5l7 7-7 7"></path>
-                      </svg>
-                    </span>
-                  </div>{" "}
+              <motion.div
+                variants={item}
+                key={price.id}
+                class="max-w-sm bg-white px-6 pt-6 pb-2 rounded-xl shadow-lg hover:gap-2 transform hover:scale-105 transition duration-500"
+              >
+                {/* <h3 class="mb-3 text-xl font-bold text-indigo-600">
+                  Beginner Friendly
+                </h3> */}
+                <div class="relative">
+                  <Image
+                    src={price.image}
+                    alt="/"
+                    width={500}
+                    height={500}
+                    className="rounded-lg  w-full "
+                  />
+                  <p class="absolute top-0 bg-yellow-300 text-gray-800 font-semibold py-1 px-3 rounded-br-lg rounded-tl-lg">
+                    {price.price}
+                  </p>
                 </div>
-              </motion.div>
 
-              // </Link>
-            );
-          })}{" "}
-        {pathname === "/pages/fees" &&
-          Price.map((price, index) => {
-            return (
-              <motion.div key={index} variants={item} class="p-4 max-w-sm">
-                <div class="flex  rounded-lg h-full bg-teal-400 p-8 flex-col hover:bg-teal-500 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105">
-                  <div className="flex justify-center">
-                    <Image
-                      src={price.image}
-                      alt="/"
-                      width="250"
-                      height="250"
-                      className="rounded-lg"
-                    />
-                  </div>
-
-                  <h2 class="text-white text-lg font-medium flex mt-3 cursor-pointer justify-center ">
-                    {price.name}
-                  </h2>
-                  {/* </div> */}
-                  <div class="flex flex-col justify-between flex-grow">
-                    <p class="leading-relaxed text-base text-white cursor-pointer">
-                      {price.description}
-                    </p>
-                    <p class="leading-relaxed text-base text-slate-800 cursor-pointer">
-                      {price.price}
-                    </p>
-                    <span
-                      href="#"
-                      class="mt-3  text-black hover:text-blue-600 inline-flex items-center cursor-pointer
-                      transition duration-500 ease-in-out transform  hover:scale-105"
-                      onClick={() => router.push(`/pages/price/${price.id}`)}
-                    >
-                      Detalı Bilgi
+                <h1 class="mt-4 text-gray-800 text-2xl font-bold cursor-pointer">
+                  {price.name}
+                </h1>
+                <div class="my-4">
+                  <div class="flex space-x-1 items-center">
+                    <span>
                       <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-6 w-6 text-indigo-600 mb-1.5"
                         fill="none"
-                        stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        class="w-4 h-4 ml-2"
                         viewBox="0 0 24 24"
+                        stroke="currentColor"
                       >
-                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                        />
                       </svg>
                     </span>
+                    <p className="text-slate-700">{price.time}</p>
                   </div>
+                  {/* <div class="flex space-x-1 items-center">
+                    <span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-6 w-6 text-indigo-600 mb-1.5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M16 4v12l-4-2-4 2V4M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
+                        />
+                      </svg>
+                    </span>
+                    <p className="text-slate-700">{price.description}</p>
+                  </div> */}
+                  <div class="flex space-x-1 items-center">
+                    <span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-6 w-6 text-indigo-600 mb-1.5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+                        />
+                      </svg>
+                    </span>
+                    <p className="text-slate-700">{price.description}</p>
+                  </div>
+                  <button
+                    onClick={() => router.push(`/pages/price/${price.id}`)}
+                    class="mt-4 text-xl w-full text-white bg-indigo-600 py-2 rounded-xl shadow-lg"
+                  >
+                    Daha Fazla Bilgi
+                  </button>
                 </div>
               </motion.div>
             );
           })}
-      </motion.div>
+        {pathname === "/pages/fees" &&
+          Price.map((price) => {
+            return (
+              <motion.div
+                variants={item}
+                key={price.id}
+                class="max-w-sm bg-white px-6 pt-6 pb-2 rounded-xl shadow-lg hover:gap-2 transform hover:scale-105 transition duration-500"
+              >
+                {/* <h3 class="mb-3 text-xl font-bold text-indigo-600">
+                  Beginner Friendly
+                </h3> */}
+                <div class="relative">
+                  <Image
+                    src={price.image}
+                    alt="/"
+                    width={500}
+                    height={500}
+                    className="rounded-lg  w-full "
+                  />
+                  <p class="absolute top-0 bg-yellow-300 text-gray-800 font-semibold py-1 px-3 rounded-br-lg rounded-tl-lg">
+                    {price.price}
+                  </p>
+                </div>
 
+                <h1 class="mt-4 text-gray-800 text-2xl font-bold cursor-pointer">
+                  {price.name}
+                </h1>
+                <div class="my-4">
+                  <div class="flex space-x-1 items-center">
+                    <span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-6 w-6 text-indigo-600 mb-1.5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                        />
+                      </svg>
+                    </span>
+                    <p className="text-slate-700">{price.time}</p>
+                  </div>
+                  <div class="flex space-x-1 items-center">
+                    {/* <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-6 text-indigo-600 mb-1.5"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M16 4v12l-4-2-4 2V4M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
+                      />
+                    </svg>
+                  </span> */}
+                    {/* <p className="text-slate-700">{item.description}</p> */}
+                  </div>
+                  <div class="flex space-x-1 items-center">
+                    <span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-6 w-6 text-indigo-600 mb-1.5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+                        />
+                      </svg>
+                    </span>
+                    <p className="text-slate-700">{price.description}</p>
+                  </div>
+                  <button
+                    onClick={() => router.push(`/pages/price/${price.id}`)}
+                    class="mt-4 text-xl w-full text-white bg-indigo-600 py-2 rounded-xl shadow-lg"
+                  >
+                    Daha Fazla Bilgi
+                  </button>
+                </div>
+              </motion.div>
+            );
+          })}
+      </motion.div>{" "}
       {pathname === "/" && (
         <div className="flex justify-center mt-10">
           <button
