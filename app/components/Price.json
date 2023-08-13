@@ -1,66 +1,209 @@
 [
   {
     "id": 1,
-    "name": "Lorem1",
-    "price": "1 TL",
+    "name": "Pantolon Paça Daraltma",
+    "price": "35 TL",
     "description": "Lorem ipsum dolor sit amet",
     "image": "https://picsum.photos/500/350",
-    "time": "2:00"
+    "time": "2:00",
+    "category": "Pantolon"
   },
   {
     "id": 2,
-    "name": "Lorem2",
-    "price": "2 TL",
+    "name": "Pantolon Bel Daraltma",
+    "price": "35 TL",
     "description": "Lorem ipsum dolor sit amet",
     "image": "https://picsum.photos/500/350",
-    "time": "2:00"
+    "time": "2:00",
+    "category": "Pantolon"
   },
   {
     "id": 3,
-    "name": "Lorem3",
+    "name": "Pantolon Fermuar Değişimi",
     "price": "3 TL",
     "description": "Lorem ipsum dolor sit amet",
     "image": "https://picsum.photos/500/350",
-    "time": "2:00"
+    "time": "2:00",
+    "category": "Pantolon"
   },
   {
     "id": 4,
-    "name": "Lorem4",
-    "price": "4 TL",
+    "name": "Etek Boy Kısaltma",
+    "price": "30 TL",
     "description": "Lorem ipsum dolor sit amet",
     "image": "https://picsum.photos/500/350",
-    "time": "2:00"
+    "time": "2:00",
+    "category": "Etek"
   },
   {
     "id": 5,
-    "name": "Lorem5",
+    "name": "Etek Fermuar Değişimi",
     "price": "5 TL",
     "description": "Lorem ipsum dolor sit amet",
     "image": "https://picsum.photos/500/350",
-    "time": "2:00"
+    "time": "2:00",
+    "category": "Etek"
   },
   {
     "id": 6,
-    "name": "Lorem6",
-    "price": "6 TL",
+    "name": "Etek Daraltma",
+    "price": "30 TL",
     "description": "Lorem ipsum dolor sit amet",
     "image": "https://picsum.photos/500/350",
-    "time": "2:00"
+    "time": "2:00",
+    "category": "Etek"
   },
   {
     "id": 7,
-    "name": "Lorem7",
-    "price": "7 TL",
+    "name": "Gömlek Boy Kısaltma",
+    "price": "30 TL",
     "description": "Lorem ipsum dolor sit amet",
     "image": "https://picsum.photos/500/350",
-    "time": "2:00"
+    "time": "2:00",
+    "category": "Gömlek"
   },
   {
     "id": 8,
-    "name": "Lorem8",
-    "price": "8 TL",
+    "name": "Gömlek Kısa Kol Daraltma",
+    "price": "30 TL",
     "description": "Lorem ipsum dolor sit amet",
     "image": "https://picsum.photos/500/350",
-    "time": "2:00"
+    "time": "2:00",
+    "category": "Gömlek"
+  },
+  {
+    "id": 9,
+    "name": "Gömlek Uzun Kol Daraltma",
+    "price": "50 TL",
+    "description": "Lorem ipsum dolor sit amet",
+    "image": "https://picsum.photos/500/350",
+    "time": "2:00",
+    "category": "Gömlek"
+  },
+  {
+    "id": 10,
+    "name": "Ceket Kol Daraltma",
+    "price": "100 TL",
+    "description": "Lorem ipsum dolor sit amet",
+    "image": "https://picsum.photos/500/350",
+    "time": "2:00",
+    "category": "Ceket"
+  },
+  {
+    "id": 11,
+    "name": "Ceket Boy Daraltma",
+    "price": "100 TL",
+    "description": "Lorem ipsum dolor sit amet",
+    "image": "https://picsum.photos/500/350",
+    "time": "2:00",
+    "category": "Ceket"
+  },
+  {
+    "id": 12,
+    "name": "Ceket Omuzdan Düzeltme",
+    "price": "200 TL",
+    "description": "Lorem ipsum dolor sit amet",
+    "image": "https://picsum.photos/500/350",
+    "time": "2:00",
+    "category": "Ceket"
+  },
+  {
+    "id": 13,
+    "name": "Mont Boy Kısaltma",
+    "price": "70 TL",
+    "description": "Lorem ipsum dolor sit amet",
+    "image": "https://picsum.photos/500/350",
+    "time": "2:00",
+    "category": "Mont"
+  },
+  {
+    "id": 14,
+    "name": "Mont Kol Kısaltma",
+    "price": "50 TL",
+    "description": "Lorem ipsum dolor sit amet",
+    "image": "https://picsum.photos/500/350",
+    "time": "2:00",
+    "category": "Mont"
+  },
+  {
+    "id": 15,
+    "name": "Mont Daraltma",
+    "price": "70 TL",
+    "description": "Lorem ipsum dolor sit amet",
+    "image": "https://picsum.photos/500/350",
+    "time": "2:00",
+    "category": "Mont"
+  },
+  {
+    "id": 16,
+    "name": "Mont Fermuar Değişimi",
+    "price": "100 TL",
+    "description": "Lorem ipsum dolor sit amet",
+    "image": "https://picsum.photos/500/350",
+    "time": "2:00",
+    "category": "Mont"
+  },
+  {
+    "id": 17,
+    "name": "T-Şort Boy Kısaltma",
+    "price": "30 TL",
+    "description": "Lorem ipsum dolor sit amet",
+    "image": "https://picsum.photos/500/350",
+    "time": "2:00",
+    "category": "T-Şort"
+  },
+  {
+    "id": 18,
+    "name": "T-Şort Kol Kısaltma",
+    "price": "30 TL",
+    "description": "Lorem ipsum dolor sit amet",
+    "image": "https://picsum.photos/500/350",
+    "time": "2:00",
+    "category": "T-Şort"
+  },
+  {
+    "id": 19,
+    "name": "T-Şort Daraltma",
+    "price": "30 TL",
+    "description": "Lorem ipsum dolor sit amet",
+    "image": "https://picsum.photos/500/350",
+    "time": "2:00",
+    "category": "T-Şort"
+  },
+  {
+    "id": 20,
+    "name": "Parka Kısaltma",
+    "price": "100 TL",
+    "description": "Lorem ipsum dolor sit amet",
+    "image": "https://picsum.photos/500/350",
+    "time": "2:00",
+    "category": "Parka"
+  },
+  {
+    "id": 21,
+    "name": "Parka Daraltma",
+    "price": "120 TL",
+    "description": "Lorem ipsum dolor sit amet",
+    "image": "https://picsum.photos/500/350",
+    "time": "2:00",
+    "category": "Parka"
+  },
+  {
+    "id": 22,
+    "name": "Parka Kol Kısaltma",
+    "price": "80 TL",
+    "description": "Lorem ipsum dolor sit amet",
+    "image": "https://picsum.photos/500/350",
+    "time": "2:00",
+    "category": "Parka"
+  },
+  {
+    "id": 23,
+    "name": "Parka Fermuar Değişimi",
+    "price": "120 TL",
+    "description": "Lorem ipsum dolor sit amet",
+    "image": "https://picsum.photos/500/350",
+    "time": "2:00",
+    "category": "Parka"
   }
 ]

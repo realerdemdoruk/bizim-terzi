@@ -22,7 +22,8 @@ const container = {
     },
   },
 };
-const Card = () => {
+
+export default function Card({ selectedCategory = "" }) {
   const router = useRouter();
   const pathname = usePathname();
 
@@ -132,7 +133,10 @@ const Card = () => {
             );
           })}
         {pathname === "/pages/fees" &&
-          Price.map((price) => {
+          Price.filter(
+            (price) =>
+              selectedCategory === "" || price.category === selectedCategory
+          ).map((price) => {
             return (
               <motion.div
                 variants={item}
@@ -239,6 +243,4 @@ const Card = () => {
       )}
     </div>
   );
-};
-
-export default Card;
+}

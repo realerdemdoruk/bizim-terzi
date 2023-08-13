@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa";
 import Image from "next/image";
 
@@ -7,15 +7,20 @@ const Slider = ({ SliderData }) => {
   const [current, setCurrent] = useState(0);
   const length = SliderData.length;
   const intervalDuration = 4000; // 4 saniye
-  let interval;
+  const intervalRef = useRef(null); // useRef ile interval'ı saklayın
+
+  const [imagesLoaded, setImagesLoaded] = useState(
+    new Array(length).fill(false)
+  );
 
   useEffect(() => {
-    interval = setInterval(() => {
+    // useRef ile interval'ı sakladık
+    intervalRef.current = setInterval(() => {
       nextSlide();
     }, intervalDuration);
 
     return () => {
-      clearInterval(interval);
+      clearInterval(intervalRef.current); // useRef ile interval'a erişin
     };
   }, [current]);
 
@@ -32,19 +37,25 @@ const Slider = ({ SliderData }) => {
   };
 
   const handleNextButtonClick = () => {
-    clearInterval(interval); // Otomatik geçişi durdur
-    nextSlide(); // Hemen bir sonraki resme geç
-    interval = setInterval(() => {
-      nextSlide(); // Otomatik geçişi tekrar başlat
+    clearInterval(intervalRef.current); // useRef ile interval'a erişin
+    nextSlide();
+    intervalRef.current = setInterval(() => {
+      nextSlide();
     }, intervalDuration);
   };
 
   const handlePrevButtonClick = () => {
-    clearInterval(interval);
+    clearInterval(intervalRef.current); // useRef ile interval'a erişin
     prevSlide();
-    interval = setInterval(() => {
+    intervalRef.current = setInterval(() => {
       nextSlide();
     }, intervalDuration);
+  };
+
+  const handleImageLoad = (index) => {
+    const loadedImages = [...imagesLoaded];
+    loadedImages[index] = true;
+    setImagesLoaded(loadedImages);
   };
 
   return (
@@ -64,17 +75,23 @@ const Slider = ({ SliderData }) => {
               }
             >
               <FaArrowCircleLeft
-                onClick={prevSlide}
+                onClick={handlePrevButtonClick} // onClick fonksiyonunu güncelledik
                 className="absolute top-[50%] left-[30px] text-white/70 cursor-pointer select-none z-[2] lg:flex hidden"
                 size={50}
               />
 
               {index === current && (
-                <Image src={slide.image} alt="/" width={1440} height={600} />
+                <Image
+                  src={slide.image}
+                  alt="/"
+                  width={1440}
+                  height={600}
+                  onLoad={() => handleImageLoad(index)}
+                />
               )}
 
               <FaArrowCircleRight
-                onClick={nextSlide}
+                onClick={handleNextButtonClick} // onClick fonksiyonunu güncelledik
                 className="absolute top-[50%] right-[30px] text-white/70 cursor-pointer select-none z-[2] lg:flex hidden"
                 size={50}
               />
