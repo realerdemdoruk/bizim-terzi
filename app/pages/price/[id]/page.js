@@ -18,19 +18,19 @@ export default function Page({ params }) {
               key={item.id}
               className="flex flex-col-reverse md:flex-row justify-center items-center gap-10"
             >
-              <div className="order-2 md:order-1">
+              <div className="order-2 px-3 md:order-1">
                 <Image
                   src={item.image}
                   alt="/"
-                  width="250"
-                  height="250"
+                  width="600"
+                  height="600"
                   className="rounded-lg"
                 />
               </div>
-              <div className="order-1 md:order-2 md:p-0 p-16 md:text-left text-center">
-                <p className="mt-3 text-lg font-semibold  ">{item.name}</p>
-                <p className="mt-3 text-gray-500 ">{item.description}</p>
-                <p className="mt-3 text-xl font-bold">{item.price}</p>
+              <div className="order-1 md:order-2 md:p-0 p-16 md:text-left  text-center">
+                <p className="mt-3 text-2xl font-semibold">{item.name}</p>
+                <p className="mt-3 text-gray-500">{item.description}</p>
+                <p className="mt-3 text-base font-bold">{item.price}</p>
               </div>
             </div>
           );

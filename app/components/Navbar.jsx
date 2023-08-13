@@ -31,10 +31,18 @@ const Navbar = () => {
       className="fixed left-0 top-0 w-full z-10 ease-in duration-300"
     >
       <div className="max-w-[1240px] m-auto flex justify-between items-center p-4 text-white">
-        <Link href="/">
+        <Link
+          href="/"
+          className="  text-white flex items-center justify-center"
+        >
           <h1
             style={{ color: `${textColor}` }}
-            className="font-bold sm:text-4xl text-sm "
+            className="font-bold sm:text-4xl text-3xl relative
+             after:bg-white after:absolute
+              after:h-1 after:w-0 after:bottom-0 after:left-0 hover:after:w-full
+               after:transition-all after:duration-300 cursor-pointer
+            
+            "
           >
             Bizim Terzi
           </h1>

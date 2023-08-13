@@ -45,9 +45,10 @@ export default function Card({ selectedCategory = "" }) {
                 key={price.id}
                 class="max-w-sm bg-white px-6 pt-6 pb-2 rounded-xl shadow-lg hover:gap-2 transform hover:scale-105 transition duration-500"
               >
-                {/* <h3 class="mb-3 text-xl font-bold text-indigo-600">
-                  Beginner Friendly
-                </h3> */}
+                <h3 class="mb-3 text-xl font-bold italic text-indigo-600">
+                  {/* Beginner Friendly */}
+                  {price.category}
+                </h3>
                 <div class="relative">
                   <Image
                     src={price.image}
@@ -61,7 +62,7 @@ export default function Card({ selectedCategory = "" }) {
                   </p>
                 </div>
 
-                <h1 class="mt-4 text-gray-800 text-2xl font-bold cursor-pointer">
+                <h1 class="mt-4 text-center text-gray-800 text-lg md:text-2xl justify-center  flex flex-wrap  font-bold cursor-pointer">
                   {price.name}
                 </h1>
                 <div class="my-4">
@@ -143,9 +144,9 @@ export default function Card({ selectedCategory = "" }) {
                 key={price.id}
                 class="max-w-sm bg-white px-6 pt-6 pb-2 rounded-xl shadow-lg hover:gap-2 transform hover:scale-105 transition duration-500"
               >
-                {/* <h3 class="mb-3 text-xl font-bold text-indigo-600">
-                  Beginner Friendly
-                </h3> */}
+                <h3 class="mb-3 text-xl font-bold italic text-indigo-600">
+                  {price.category}
+                </h3>
                 <div class="relative">
                   <Image
                     src={price.image}
@@ -159,7 +160,7 @@ export default function Card({ selectedCategory = "" }) {
                   </p>
                 </div>
 
-                <h1 class="mt-4 text-gray-800 text-2xl font-bold cursor-pointer">
+                <h1 class="mt-4 text-center text-gray-800 text-lg md:text-2xl justify-center  flex flex-wrap  font-bold cursor-pointer">
                   {price.name}
                 </h1>
                 <div class="my-4">

@@ -23,7 +23,6 @@ const container = {
 };
 
 const Page = () => {
-  // Adı büyük harfle başlatıyoruz
   const [selectedCategory, setSelectedCategory] = useState("");
   const uniqueCategories = [...new Set(Price.map((item) => item.category))];
 
@@ -55,6 +54,18 @@ const Page = () => {
             </motion.button>
           );
         })}
+
+        <motion.button
+          variants={item}
+          className={`${
+            selectedCategory === ""
+              ? "bg-indigo-600 text-white"
+              : "bg-white text-indigo-600 transition duration-1000 ease-in-out   "
+          } px-4 py-2 rounded-md`}
+          onClick={() => setSelectedCategory("")}
+        >
+          Tümü
+        </motion.button>
       </motion.div>
 
       <div className="flex justify-center items-center gap-4 mt-4">
@@ -64,4 +75,4 @@ const Page = () => {
   );
 };
 
-export default Page; // Bileşen adı olarak "Page" kullanıyoruz
+export default Page;
