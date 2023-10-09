@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import Price from "./Price.json";
+import Price from "../data/price.json";
 import Image from "next/image";
 import { useRouter, usePathname, useSearchParams } from "next/navigation";
 

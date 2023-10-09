@@ -1,28 +1,17 @@
 "use client";
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useRef } from "react";
 import { FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa";
 import Image from "next/image";
 
 const Slider = ({ SliderData }) => {
   const [current, setCurrent] = useState(0);
   const length = SliderData.length;
-  const intervalDuration = 4000; // 4 saniye
+  const intervalDuration = 4000000; // 4 saniye
   const intervalRef = useRef(null); // useRef ile interval'ı saklayın
 
   const [imagesLoaded, setImagesLoaded] = useState(
     new Array(length).fill(false)
   );
-
-  useEffect(() => {
-    // useRef ile interval'ı sakladık
-    intervalRef.current = setInterval(() => {
-      nextSlide();
-    }, intervalDuration);
-
-    return () => {
-      clearInterval(intervalRef.current); // useRef ile interval'a erişin
-    };
-  }, [current]);
 
   const nextSlide = () => {
     setCurrent((prevCurrent) =>
@@ -75,9 +64,9 @@ const Slider = ({ SliderData }) => {
               }
             >
               <FaArrowCircleLeft
-                onClick={handlePrevButtonClick} // onClick fonksiyonunu güncelledik
-                className="absolute top-[50%] left-[30px] text-white/70 cursor-pointer select-none z-[2] lg:flex hidden"
-                size={50}
+                onClick={handlePrevButtonClick}
+                className="absolute top-[50%]
+                left-[30px] text-white/70 cursor-pointer select-none z-[2] lg:flex w-9 h-9 lg:w-14 lg:h-14"
               />
 
               {index === current && (
@@ -92,8 +81,7 @@ const Slider = ({ SliderData }) => {
 
               <FaArrowCircleRight
                 onClick={handleNextButtonClick} // onClick fonksiyonunu güncelledik
-                className="absolute top-[50%] right-[30px] text-white/70 cursor-pointer select-none z-[2] lg:flex hidden"
-                size={50}
+                className="absolute top-[50%] right-[30px] text-white/70 cursor-pointer select-none z-[2] lg:flex w-9 h-9 lg:w-14 lg:h-14"
               />
             </div>
           );

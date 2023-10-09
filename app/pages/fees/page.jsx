@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Card from "@/app/components/Card";
-import Price from "@/app/components/Price.json";
+import Price from "@/app/data/Price.json";
 import { motion } from "framer-motion";
 
 const item = {
