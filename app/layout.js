@@ -1,7 +1,7 @@
 import "./globals.css";
-import { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Navbar from "./components/Navbar";
+import PhoneButton from "./components/PhoneButton";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -12,22 +12,14 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html
-      lang="en"
-      className="
-      
-      "
-    >
-      <head></head>
+    <html lang="tr">
       <body
-        className={`${inter.className} min-h-screen flex flex-col duration-1000
-ease-in-out transition-all flex-1 
-bg-gradient-to-r from-gray-700 via-gray-900 to-black
- `}
+        className={`${inter.className} min-h-screen flex flex-col flex-1 
+        bg-gradient-to-bl from-indigo-900 via-indigo-400 to-indigo-900`}
       >
         <Navbar />
-
         {children}
+        <PhoneButton />
       </body>
     </html>
   );
