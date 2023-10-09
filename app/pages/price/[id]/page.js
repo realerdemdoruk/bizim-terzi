@@ -1,16 +1,10 @@
-"use client";
 import React from "react";
-import Price from "../../../components/Price.json";
-import { useRouter, usePathname, useSearchParams } from "next/navigation";
-import Link from "next/link";
+import Price from "../../../data/Price.json";
 import Image from "next/image";
 
 export default function Page({ params }) {
-  console.log(params);
   return (
     <div className="flex flex-col items-center justify-center mt-24 h-screen">
-      {/* {params.id} */}
-
       {Price.map((item) => {
         if (item.id == params.id) {
           return (
