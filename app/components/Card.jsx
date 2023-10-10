@@ -33,7 +33,6 @@ export default function Card({ selectedCategory = "" }) {
         variants={container}
         initial="hidden"
         animate="visible"
-        // class="md:px-4 md:grid md:grid-cols-2 lg:grid-cols-3 flex justify-center gap-5 space-y-4 md:space-y-0 "
         class="flex  flex-wrap justify-center gap-5 space-y-4 md:space-y-0 mt-10"
       >
         {/* Buradan itibaren dön */}
@@ -85,26 +84,8 @@ export default function Card({ selectedCategory = "" }) {
                     </span>
                     <p className="text-slate-700">{price.time}</p>
                   </div>
-                  {/* <div class="flex space-x-1 items-center">
-                    <span>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-6 w-6 text-indigo-600 mb-1.5"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M16 4v12l-4-2-4 2V4M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
-                        />
-                      </svg>
-                    </span>
-                    <p className="text-slate-700">{price.description}</p>
-                  </div> */}
-                  <div class="flex space-x-1 items-center">
+
+                  <div class="flex space-x-1 mt-3 ">
                     <span>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -183,26 +164,8 @@ export default function Card({ selectedCategory = "" }) {
                     </span>
                     <p className="text-slate-700">{price.time}</p>
                   </div>
-                  <div class="flex space-x-1 items-center">
-                    {/* <span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-6 w-6 text-indigo-600 mb-1.5"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M16 4v12l-4-2-4 2V4M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
-                      />
-                    </svg>
-                  </span> */}
-                    {/* <p className="text-slate-700">{item.description}</p> */}
-                  </div>
-                  <div class="flex space-x-1 items-center">
+
+                  <div class="flex space-x-1 mt-3 ">
                     <span>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"

@@ -3,7 +3,7 @@
     "id": 1,
     "name": "Pantolon Paça Daraltma",
     "price": "35 TL",
-    "description": "Lorem ipsum dolor sit amet",
+    "description": "Bir pantolonun alt bacak kısmının genişliğini veya uzunluğunu azaltarak daha dar ve modern bir görünüm elde etmek için kullanılan bir giyim tadilat yöntemidir.",
     "image": "https://picsum.photos/500/350",
     "time": "2:00",
     "category": "Pantolon"
@@ -12,7 +12,7 @@
     "id": 2,
     "name": "Pantolon Bel Daraltma",
     "price": "35 TL",
-    "description": "Lorem ipsum dolor sit amet",
+    "description": "Pantolon bel daraltma, bir pantolonun bel kısmının genişliğini küçülterek daha iyi oturmasını sağlayan bir giyim tadilat işlemidir.",
     "image": "https://picsum.photos/500/350",
     "time": "2:00",
     "category": "Pantolon"
@@ -20,8 +20,8 @@
   {
     "id": 3,
     "name": "Pantolon Fermuar Değişimi",
-    "price": "3 TL",
-    "description": "Lorem ipsum dolor sit amet",
+    "price": "40 TL",
+    "description": "Pantolon fermuar değişimi, eski veya bozulmuş bir fermuarın yerine yeni bir fermuar takılması işlemidir.",
     "image": "https://picsum.photos/500/350",
     "time": "2:00",
     "category": "Pantolon"
@@ -30,7 +30,7 @@
     "id": 4,
     "name": "Etek Boy Kısaltma",
     "price": "30 TL",
-    "description": "Lorem ipsum dolor sit amet",
+    "description": "Etek boy kısaltma, bir eteğin uzunluğunun kişinin tercihlerine veya gereksinimlerine uyacak şekilde kısaltılması işlemidir.",
     "image": "https://picsum.photos/500/350",
     "time": "2:00",
     "category": "Etek"
@@ -39,7 +39,7 @@
     "id": 5,
     "name": "Etek Fermuar Değişimi",
     "price": "5 TL",
-    "description": "Lorem ipsum dolor sit amet",
+    "description": "Etek fermuar değişimi, bir eteğin fermuarının arızalandığında veya değiştirilmesi gerektiğinde eski fermuarın çıkarılıp yeni bir fermuarın dikilmesi işlemidir.",
     "image": "https://picsum.photos/500/350",
     "time": "2:00",
     "category": "Etek"
@@ -48,7 +48,7 @@
     "id": 6,
     "name": "Etek Daraltma",
     "price": "30 TL",
-    "description": "Lorem ipsum dolor sit amet",
+    "description": "Etek daraltma, bir eteğin genişliğini veya kalçasından itibaren alt kısmını daha dar bir şekilde ayarlamak için yapılan bir giyim tadilat işlemidir.",
     "image": "https://picsum.photos/500/350",
     "time": "2:00",
     "category": "Etek"
@@ -57,7 +57,7 @@
     "id": 7,
     "name": "Gömlek Boy Kısaltma",
     "price": "30 TL",
-    "description": "Lorem ipsum dolor sit amet",
+    "description": "Gömlek boy kısaltma, bir gömleğin alt kısmının kişinin tercihlerine veya beden ölçülerine uyacak şekilde kısaltılması işlemidir.",
     "image": "https://picsum.photos/500/350",
     "time": "2:00",
     "category": "Gömlek"
@@ -66,7 +66,7 @@
     "id": 8,
     "name": "Gömlek Kısa Kol Daraltma",
     "price": "30 TL",
-    "description": "Lorem ipsum dolor sit amet",
+    "description": "Gömlek kısa kol daraltma, bir gömleğin kısa kollarının daha dar bir şekilde ayarlanması işlemidir, böylece daha sıkı veya vücuda oturan bir görünüm elde edilir.",
     "image": "https://picsum.photos/500/350",
     "time": "2:00",
     "category": "Gömlek"
@@ -75,7 +75,7 @@
     "id": 9,
     "name": "Gömlek Uzun Kol Daraltma",
     "price": "50 TL",
-    "description": "Lorem ipsum dolor sit amet",
+    "description": "Gömlek uzun kol daraltma, bir gömleğin uzun kollarının daha dar bir şekilde ayarlanması işlemidir, böylece daha sıkı veya vücuda oturan bir görünüm elde edilir.",
     "image": "https://picsum.photos/500/350",
     "time": "2:00",
     "category": "Gömlek"
@@ -84,7 +84,7 @@
     "id": 10,
     "name": "Ceket Kol Daraltma",
     "price": "100 TL",
-    "description": "Lorem ipsum dolor sit amet",
+    "description": "Ceket kol daraltma, bir ceketin kollarının daha dar bir şekilde ayarlanması işlemidir, böylece daha sıkı veya vücuda oturan bir görünüm elde edilir.",
     "image": "https://picsum.photos/500/350",
     "time": "2:00",
     "category": "Ceket"
@@ -93,7 +93,7 @@
     "id": 11,
     "name": "Ceket Boy Daraltma",
     "price": "100 TL",
-    "description": "Lorem ipsum dolor sit amet",
+    "description": "Ceket boy daraltma, bir ceketin etek kısmının veya uzunluğunun kişinin tercihlerine veya beden ölçülerine uyacak şekilde kısaltılması işlemidir.",
     "image": "https://picsum.photos/500/350",
     "time": "2:00",
     "category": "Ceket"
@@ -102,7 +102,7 @@
     "id": 12,
     "name": "Ceket Omuzdan Düzeltme",
     "price": "200 TL",
-    "description": "Lorem ipsum dolor sit amet",
+    "description": "Ceket omuzdan düzeltme, bir ceketin omuz bölgesinin kişinin beden yapısına daha uygun hale getirilmesi için yapılan bir giyim tadilat işlemidir.",
     "image": "https://picsum.photos/500/350",
     "time": "2:00",
     "category": "Ceket"
@@ -111,7 +111,7 @@
     "id": 13,
     "name": "Mont Boy Kısaltma",
     "price": "70 TL",
-    "description": "Lorem ipsum dolor sit amet",
+    "description": "Mont boy kısaltma, bir montun uzunluğunun kişinin tercihlerine veya beden ölçülerine uyacak şekilde kısaltılması işlemidir.",
     "image": "https://picsum.photos/500/350",
     "time": "2:00",
     "category": "Mont"
@@ -120,7 +120,7 @@
     "id": 14,
     "name": "Mont Kol Kısaltma",
     "price": "50 TL",
-    "description": "Lorem ipsum dolor sit amet",
+    "description": "Mont kol kısaltma, bir montun kollarının kişinin tercihlerine veya beden ölçülerine uygun hale getirilmesi işlemidir.",
     "image": "https://picsum.photos/500/350",
     "time": "2:00",
     "category": "Mont"
@@ -129,7 +129,7 @@
     "id": 15,
     "name": "Mont Daraltma",
     "price": "70 TL",
-    "description": "Lorem ipsum dolor sit amet",
+    "description": "Mont daraltma, bir montun genişliğinin veya bel bölgesinin kişinin beden ölçülerine veya tercihlerine uygun hale getirilmesi işlemidir.",
     "image": "https://picsum.photos/500/350",
     "time": "2:00",
     "category": "Mont"
@@ -138,7 +138,7 @@
     "id": 16,
     "name": "Mont Fermuar Değişimi",
     "price": "100 TL",
-    "description": "Lorem ipsum dolor sit amet",
+    "description": "Mont fermuar değişimi, montun fermuarının bozulduğunda veya değiştirilmesi gerektiğinde eski fermuarın çıkarılıp yeni bir fermuarın takılması işlemidir.",
     "image": "https://picsum.photos/500/350",
     "time": "2:00",
     "category": "Mont"
@@ -147,7 +147,7 @@
     "id": 17,
     "name": "T-Şort Boy Kısaltma",
     "price": "30 TL",
-    "description": "Lorem ipsum dolor sit amet",
+    "description": "T-shirt boy kısaltma, bir tişörtün uzunluğunun kişinin tercihlerine veya beden ölçülerine uygun hale getirilmesi işlemidir.",
     "image": "https://picsum.photos/500/350",
     "time": "2:00",
     "category": "T-Şort"
@@ -156,7 +156,7 @@
     "id": 18,
     "name": "T-Şort Kol Kısaltma",
     "price": "30 TL",
-    "description": "Lorem ipsum dolor sit amet",
+    "description": "T-shirt kol kısaltma, bir tişörtün kollarının kişinin tercihlerine veya beden ölçülerine uygun hale getirilmesi işlemidir.",
     "image": "https://picsum.photos/500/350",
     "time": "2:00",
     "category": "T-Şort"
@@ -165,7 +165,7 @@
     "id": 19,
     "name": "T-Şort Daraltma",
     "price": "30 TL",
-    "description": "Lorem ipsum dolor sit amet",
+    "description": "T-shirt daraltma, bir tişörtün genişliğinin kişinin beden ölçülerine veya tercihlerine uygun hale getirilmesi işlemidir.",
     "image": "https://picsum.photos/500/350",
     "time": "2:00",
     "category": "T-Şort"
@@ -174,7 +174,7 @@
     "id": 20,
     "name": "Parka Kısaltma",
     "price": "100 TL",
-    "description": "Lorem ipsum dolor sit amet",
+    "description": "Parka kısaltma, bir parka ceketin etek kısmının veya uzunluğunun kişinin tercihlerine veya beden ölçülerine uyacak şekilde kısaltılması işlemidir.",
     "image": "https://picsum.photos/500/350",
     "time": "2:00",
     "category": "Parka"
@@ -183,7 +183,7 @@
     "id": 21,
     "name": "Parka Daraltma",
     "price": "120 TL",
-    "description": "Lorem ipsum dolor sit amet",
+    "description": "Parka daraltma, bir parka ceketin genişliğinin veya bel bölgesinin kişinin beden ölçülerine veya tercihlerine uygun hale getirilmesi işlemidir.",
     "image": "https://picsum.photos/500/350",
     "time": "2:00",
     "category": "Parka"
@@ -192,7 +192,7 @@
     "id": 22,
     "name": "Parka Kol Kısaltma",
     "price": "80 TL",
-    "description": "Lorem ipsum dolor sit amet",
+    "description": "Parka kol kısaltma, bir parka ceketin kollarının kişinin tercihlerine veya beden ölçülerine uygun hale getirilmesi işlemidir.",
     "image": "https://picsum.photos/500/350",
     "time": "2:00",
     "category": "Parka"
@@ -201,7 +201,7 @@
     "id": 23,
     "name": "Parka Fermuar Değişimi",
     "price": "120 TL",
-    "description": "Lorem ipsum dolor sit amet",
+    "description": "Parka fermuar değişimi, bir parka ceketin fermuarının bozulduğunda veya değiştirilmesi gerektiğinde eski fermuarın çıkarılıp yeni bir fermuarın takılması işlemidir.",
     "image": "https://picsum.photos/500/350",
     "time": "2:00",
     "category": "Parka"

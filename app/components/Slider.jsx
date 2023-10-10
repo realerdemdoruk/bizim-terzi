@@ -55,14 +55,7 @@ const Slider = ({ SliderData }) => {
       <div className="relative flex justify-center">
         {SliderData.map((slide, index) => {
           return (
-            <div
-              key={index}
-              className={
-                index === current
-                  ? "opacity-100 ease-in duration-200 max-h-full min-h-full"
-                  : "opacity-0 max-h-full min-h-full"
-              }
-            >
+            <div key={index} className={" max-h-full min-h-full"}>
               <FaArrowCircleLeft
                 onClick={handlePrevButtonClick}
                 className="absolute top-[50%]
@@ -80,7 +73,7 @@ const Slider = ({ SliderData }) => {
               )}
 
               <FaArrowCircleRight
-                onClick={handleNextButtonClick} // onClick fonksiyonunu güncelledik
+                onClick={handleNextButtonClick}
                 className="absolute top-[50%] right-[30px] text-white/70 cursor-pointer select-none z-[2] lg:flex w-9 h-9 lg:w-14 lg:h-14"
               />
             </div>

@@ -4,7 +4,13 @@ import Image from "next/image";
 
 export default function Page({ params }) {
   return (
-    <div className="flex flex-col items-center justify-center mt-24 h-screen">
+    <div
+      className="flex flex-col items-center justify-center  mt-24 h-4/5"
+      style={{
+        maxHeight: "80vh",
+        height: "80vh",
+      }}
+    >
       {Price.map((item) => {
         if (item.id == params.id) {
           return (
@@ -23,7 +29,13 @@ export default function Page({ params }) {
               </div>
               <div className="order-1 md:order-2 md:p-0 p-16 md:text-left  text-center">
                 <p className="mt-3 text-2xl font-semibold">{item.name}</p>
-                <p className="mt-3 text-gray-500">{item.description}</p>
+                <p
+                  className="mt-3
+                  max-w-sm
+                text-teal-400"
+                >
+                  {item.description}
+                </p>
                 <p className="mt-3 text-base font-bold">{item.price}</p>
               </div>
             </div>

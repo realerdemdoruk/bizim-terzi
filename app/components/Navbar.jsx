@@ -55,9 +55,6 @@ const Navbar = () => {
           <li className="p-4">
             <Link href="/pages/fees">Fiyatlar</Link>
           </li>
-          <li className="p-4">
-            {/* <Link href="/pages/contact">Contact</Link> */}
-          </li>
         </ul>
 
         {/* Mobile Button */}
@@ -94,12 +91,6 @@ const Navbar = () => {
               className="p-4 text-4xl hover:text-gray-500"
             >
               <Link href="/pages/fees">Fiyatlar</Link>
-            </li>
-            <li
-              onClick={handleNav}
-              className="p-4 text-4xl hover:text-gray-500"
-            >
-              {/* <Link href="/pages/contact">Contact</Link> */}
             </li>
           </ul>
         </div>
